@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>How Might We</title>
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+	<style>
+	body {
+		margin: 0;
+		font-family: 'Work Sans';
+		font-size: 44px;
+		color: green;
+		background: #000000;
+	}
+
+	#wrapper {
+		user-select: none;
+		position: absolute;
+		max-width: 80%;
+		left: 50%;
+		top: 20%;
+		transform: translateX(-50%);
+	}
+
+	span.prefix {
+		cursor: pointer;
+		color: #ffffff;
+	}
+
+	.artifact.question {
+		color: #F38089;
+	}
+
+	.method.question {
+		color: #8AD3D9;
+	}
+
+	.location.question {
+		color: #2cba5e;
+	}
+
+	#text-selector {
+		opacity: 0;
+		top: -9999px;
+		position: absolute;
+	}
+</style>
+</head>
+<body>
+	<div id="text-selector"></div>
+	<div id="wrapper">
+
+		<div id="sentence"><span class="artifact prefix">How might we </span><span class="artifact question"></span><span class="method prefix"> by </span><span class="method question"></span><span class="location prefix"> in </span><span class="location question">.</span></div>
+
+	</div>
+	<script src="hmw.js"></script>
+</body>
+</html>
